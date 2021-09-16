@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  php:
+    build:
+      context: ./docker/php/
+    ports:
+      - 80:8000
+    volumes:
+      - ./:/var/www
